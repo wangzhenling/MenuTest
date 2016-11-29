@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+ <item
+        android:icon="@drawable/file"
+        android:title="文件">
+        
+        <menu>
+            <item android:title="新建"
+                android:orderInCategory="1"/>
+            <item android:title="打开"
+                android:orderInCategory="0"/>
+            <item android:title="保存"
+                android:orderInCategory="2"/>
+            <item android:id="@+id/exit"
+                android:title="退出"/>
+        </menu>
+        
+    </item>
+    
+    <item 
+        android:alphabeticShortcut="e"
+        android:title="编辑">
+        
+        <menu>
+            <item android:title="恢复"/>
+            <item android:title="取消"/>
+            <group
+                android:enabled="false">
+                ......
+            </group>
+        </menu>          
+                
+    </item>
+    
+    <item
+        android:id="@+id/set"
+        android:title="设置">
+        
+        <menu>
+            <item android:id="@+id/start"
+                android:title="启用"/>
+            <item android:id="@+id/stop"
+                android:title="禁用"
+                android:enabled="false"/>
+        </menu>
+        
+    </item>
+    <item android:numericShortcut="8"
+        android:title="帮助"/>
+    
+</menu>
